@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="ELisa Arcanjo">
+    <title>SpotMusic/Início</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <header>
+        <menu>
+            <a href="index.html" >Início</a>
+            <a href="login.html">Login</a>
+            <a href="#" id="btnSobre">Sobre</a>
+            <a href="#" id="btnContato">Contato</a>
+            <a href="cadastro.html">Cadastro</a>
+        </menu>
+        <!-- Adicione o conteúdo da seção "Sobre" aqui -->
+        <div id="SubMenuSobre" class="submenu">
+            <ul>
+                <li><a href="#" id="btnEmpresa">Nossa Empresa</a></li>
+                <li><a href="#" id="btnCliente">Nossos Clientes</a></li>
+            </ul>
+        </div>
+        <!-- Adicione o conteúdo da seção "Contato" aqui -->
+        <div id="SubMenuContato" class="submenu">
+            <ul>
+                <li><a href="#" id="btnEmail">Email</a></li>
+                <li><a href="#" id="btnTelefone">Telefone</a></li>
+            </ul>   
+        </div>
+        <div id="SubSubMenuEmpresa" class="subSubmenu">
+            <h2>Nossa Empresa</h2>
+            <p>Somos uma empresa dedicada a fornecer a melhor experiência musical para nossos usuários. Com uma vasta biblioteca de músicas e álbuns, oferecemos uma plataforma intuitiva e fácil de usar.</p>
+        </div>  
+        <div id="SubSubMenuCliente" class="subSubmenu">
+            <h2>Nossos Clientes</h2>
+            <p>Conheça nossos clientes satisfeitos e descubra como o SpotMusic tem transformado suas experiências musicais.</p>
+        </div>  
+        <div id="SubSubMenuTelefone" class="subSubmenu">
+            <h2>Telefone</h2>
+            <p>(32)1234-5678</p>
+        </div>  
+        <div id="SubSubMenuEmail" class="subSubmenu">
+            <h2>Email</h2>
+            <p>contato@spotmusic.com</p>
+        </div>  
+    </header>
+    <main>
+        <div class="container">
+            <h1>Bem-vindo ao SpotMusic</h1>
+            <p>Aqui você consegue explorar milhões de músicas, criar playlists personalizadas e descobrir novos artistas totalmente gratuito.</p>
+            <button onclick="window.location.href='cadastro.html'">Cadastre-se</button>
+        </div>
+        <br>
+        <!-- Estrutura do Popup -->
+        <div id="meuPopup" class="popup-comunidade">
+            <button class="botao-fechar" onclick="fecharPopup()">&times;</button>
+            <h3>Participe já dessa novidade musical!</h3>
+        </div>
+    </main>
+    <br>
+    <footer>
+        <p>&copy; 2026 SpotMusic. Todos os direitos reservados.
+            <time id="dataAtual"></time>
+        </p> 
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

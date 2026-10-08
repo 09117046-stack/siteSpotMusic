@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpotMusic/Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <menu>
+            <a href="#" id="btnSobre">Sobre</a>
+            <a href="#" id="btnContato">Contato</a>
+            <a href="index.html">Sair</a>
+        </menu>
+        <!-- Adicione o conteúdo da seção "Sobre" aqui -->
+        <div id="SubMenuSobre" class="submenu">
+            <ul>
+                <li><a href="#">Nossa Empresa</a></li>
+                <li><a href="#">Nossos Clientes</a></li>
+            </ul>
+        </div>
+        <!-- Adicione o conteúdo da seção "Contato" aqui -->
+        <div id="SubMenuContato" class="submenu">
+            <ul>
+                <li><a href="#">Email</a></li>
+                <li><a href="#">Telefone</a></li>
+            </ul>   
+        </div>        
+    </header>
+    <main>
+        <h1>Bem-vindo ao SpotMusic</h1>
+        <h2>Acesse novas músicas e seus álbuns favoritos!</h2>
+        <p>Pesquise novas músicas e artistas de forma liberada!</p>
+        <form id="formulario" class="form-group" action="resultado.html" method="GET">
+            <label for="tipoPesquisa">Informe o tipo de pesquisa:</label>
+            <select id="tipoPesquisa" name="pesquisa" required>
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="musica">Música</option>
+                <option value="artista">Artista</option>
+                <option value="album">Álbum</option>
+            </select>
+            <br>
+            <label for="nomePesquisa">Informe o nome da pesquisa:</label>
+            <input type="text" id="nomePesquisa" name="nomePesquisa" required>
+            <br>
+            <button type="submit">Pesquisar</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2026 SpotMusic. Todos os direitos reservados.
+            <time id="dataAtual"></time>
+        </p> 
+    </footer>
+    <script src="script.js"></script> 
+</body>
+</html>

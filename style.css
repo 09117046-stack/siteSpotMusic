@@ -1,0 +1,267 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: times new roman, sans-serif;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 55px;
+    width: min(100%, 600px);
+    box-sizing: border-box;
+    margin: 100px auto;
+    align-items: center;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #01050a;
+    font-size: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #db7f34;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #37b929;
+}
+
+.container {
+    background-color: #ffffff;
+    margin-top: 50px;
+    padding: 10px 10px 30px 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+h1, h2 {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+p {
+    margin-bottom: 30px;
+    color: #7f8c8d;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-group input:focus {
+    border-color: #db6634;
+    border-width: 2px;  
+    outline: none;
+}
+
+button {
+    background-color: #db7f34;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #b95929;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn-voltar {
+    background-color: #95a5a6;
+}
+
+.btn-voltar:hover {
+    background-color: #7f8c8d;
+}
+
+/* Estilo do fundo do popup */
+.popup-comunidade {
+    width: 80%;
+    position: center;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366; /* Cor de fundo (ex: verde) */
+    color: white;
+    margin: 10px 10px 10px 30px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    font-family: Arial, sans-serif;
+    z-index: 1000;
+    text-align: center;
+        
+    /* Aplica a animação de piscar (chamada 'piscar') */
+    animation: piscar 1.5s infinite alternate;
+}
+
+/* Configuração da animação de piscar (mudando a opacidade) */
+@keyframes piscar {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0.7;
+        transform: scale(1.05); /* Dá um leve efeito de pulso junto */
+    }
+}
+
+/* Botão de fechar */
+.botao-fechar {
+    position: relative;
+    left: 5px;
+    top: 5px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Botão de ação */
+.botao-entrar {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: white;
+    color: #25d366;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0.9);
+    font-size: 11px;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    box-sizing: border-box;
+    margin-top: auto;
+    align-self: stretch;
+}
+
+.submenu {
+    position: fixed;
+    top: 50px; /* Alinhado abaixo da navbar */
+    left: -250px; /* Começa escondido fora da tela à esquerda */
+    width: 200px;
+    height: 100%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    transition: left 0.3s ease; /* Transição suave ao abrir */
+}
+
+.subSubmenu {
+    position: fixed;
+    top: 50px; /* Alinhado abaixo da navbar */
+    left: -250px; /* Começa escondido fora da tela à esquerda */
+    width: 200px;
+    height: 100%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    transition: top 0.3s ease; /* Transição suave ao abrir */
+}
+
+.submenu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.submenu a {
+    font-size: 20px;
+    color: #db7f34;
+    text-decoration: none;
+}   
+
+.submenu a:hover {
+    color: #37b929;
+}
+
+.submenu.active {
+    left: 0px; /* Move o submenu para dentro da tela */   
+}
+
+.subSubmenu.active {
+    left: 200px; /* Move o submenu para dentro da tela */   
+}
+
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+}

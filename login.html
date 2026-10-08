@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpotMusic/Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <menu>
+            <a href="index.html">Início</a></li>
+            <a href="login.html">Login</a></li>
+            <a href="#">Sobre</a></li>
+            <a href="#">Contato</a></li>
+            <a href="cadastro.html">Cadastro</a></li>
+        </menu>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Login</h1>
+            <form id="formLogin" method="POST">
+                <label for="emailLogin">Email:</label>
+                <input type="email" id="emailLogin" name="emailLogin" required><br><br>
+                <label for="senhaLogin">Senha:</label>
+                <input type="password" id="senhaLogin" name="senhaLogin" required><br><br>
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 SpotMusic. Todos os direitos reservados.
+            <time id="dataAtual"></time>
+        </p> 
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
